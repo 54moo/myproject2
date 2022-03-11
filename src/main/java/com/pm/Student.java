@@ -5,6 +5,20 @@ public class Student {
         int english;
         int math;
 
+    public Student (String name){ //Constructor
+        this.name = name;
+    }
+
+    public Student (String name,int english,int math){ //Constructor
+        this(name);
+        //this.name = name;
+        this.english = english;
+        this.math = math;
+    }
+
+    public Student (){ //Default Constructor
+    }
+
     public void print(){
         int average = (english+math)/2;
         System.out.print(name + "\t" + english + "\t" + math + "\t"
