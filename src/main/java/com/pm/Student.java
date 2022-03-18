@@ -1,9 +1,9 @@
 package com.pm;
 
 public class Student {
-        String name;
-        int english;
-        int math;
+    String name;
+    int english;
+    int math;
 
     public Student (String name){ //Constructor
         this.name = name;
