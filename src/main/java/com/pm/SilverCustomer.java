@@ -5,11 +5,8 @@ public class SilverCustomer extends Customer {
     }
     @Override
     public void print() {
-        System.out.println(
-                id + "\t" + amount + "\t" + (amount-backMoney()) +
-                        "("+backMoney()+")");
         System.out.println(id + "\t" + amount + "\t" +
                 (amount-backMoney()) +
-                "(" + backMoney() + ")");
+                "(" + backMoney() + ")" );
     }
 }
