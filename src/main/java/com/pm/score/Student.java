@@ -1,4 +1,4 @@
-package com.pm;
+package com.pm.score;
 
 public class Student {
     String name;
@@ -19,11 +19,14 @@ public class Student {
     public Student (){ //Default Constructor
     }
 
+    public int getAverage(){
+        return (english+math)/2;
+    }
+
     public void print(){
-        int average = (english+math)/2;
         System.out.print(name + "\t" + english + "\t" + math + "\t"
-                + average );
-        if (average < 60){
+                + getAverage() );
+        if (getAverage() < 60){
             System.out.print("*");
         }
         System.out.println();

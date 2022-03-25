@@ -1,4 +1,5 @@
-package com.pm;
+package com.pm.score;
+
 public class GraduateStudent extends Student {
     int thesis;
     public GraduateStudent(String name,

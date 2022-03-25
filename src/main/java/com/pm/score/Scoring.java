@@ -1,4 +1,4 @@
-package com.pm;
+package com.pm.score;
 
 public class Scoring {
     public static void main(String[] args) {
