@@ -16,6 +16,5 @@ public class Ticket {
 
     public void print(){
         //taipeiCity = 100;
-        System.out.println();
     }
 }
