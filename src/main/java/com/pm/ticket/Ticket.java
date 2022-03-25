@@ -9,12 +9,13 @@ public class Ticket {
     Station start;
     Station destination;
 
-    public Ticket( Station start, Station destination){
+    public Ticket(Station start, Station destination){
         this.start = start;
         this.destination = destination;
     }
 
     public void print(){
         //taipeiCity = 100;
+        System.out.println();
     }
 }
