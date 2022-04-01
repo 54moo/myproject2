@@ -5,4 +5,13 @@ public class PlatinumCustomer extends GoldenCustomer{
         super(id, amount);
     }
 
+    @Override
+    public float discount() {
+        return (int)(amount*0.7);
+    }
+
+    @Override
+    public float getReturnMoney() {
+        return (int)(amount*0.2f);
+    }
 }
