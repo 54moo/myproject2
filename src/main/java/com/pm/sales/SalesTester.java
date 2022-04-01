@@ -1,6 +1,6 @@
 package com.pm.sales;
 
-//  Customer         ->  ????
+//  Customer         ->  ???? (man qian song bai)
 //  SliverCustomer   ->  ???? + [()*0.1]
 //  GoldenCustomer   ->  ()*0.9 + [()*0.1]
 //  PlatinumCustomer ->  ()*0.7 + [()*.02]
