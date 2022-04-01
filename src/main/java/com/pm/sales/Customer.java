@@ -10,11 +10,12 @@ public class Customer {
         this.amount = amount;
     }
 
-    public float backMoney() {
+    public float geyOffMoney() {
         return (amount/1000)*off*1000;
     }
 
     public void print(){
-        System.out.println(id + "\t" + amount + "\t" + (amount-backMoney()));
+        float money = amount-geyOffMoney();
+        System.out.println(id + "\t" + amount + "\t" + money);
     }
 }

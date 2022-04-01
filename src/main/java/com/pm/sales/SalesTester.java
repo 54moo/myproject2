@@ -1,20 +1,28 @@
 package com.pm.sales;
-//  一般客戶 - 滿千送百
-//  銀級客戶 - 滿千送百, 再送百元還元金
-//  金級客戶 - 滿千送二百，再送二百還元金
-//  0001  1200  1100
-//  0002   800   800
-//  0003  2000  1800(200)  <--銀級客戶
+
+//  Customer         ->  ????
+//  SliverCustomer   ->  ???? + [()*0.1]
+//  GoldenCustomer   ->  ()*0.9 + [()*0.1]
+//  PlatinumCustomer ->  ()*0.7 + [()*.02]
+
+//  [level]             [id]   [cost]  [spend]  [open point]
+//  (Customer)          0001    1200    1100     (0)
+//  (Customer)          0002    800     800      (0)
+//  (SliverCustomer)    0003    1800    1700     (180)
+//  (GoldenCustomer)    0004    2100    1890     (210)
+//  (PlatinumCustomer)  0005    3500    2450     (700)
 public class SalesTester {
     public static void main(String[] args) {
         Customer c1 = new Customer("0001", 1200);
         Customer c2 = new Customer("0002", 800);
-        SilverCustomer c3 = new SilverCustomer("0003", 2000);
-        GoldenCustomer c4 = new GoldenCustomer("0004", 5000);
+        SilverCustomer c3 = new SilverCustomer("0003", 1800);
+        GoldenCustomer c4 = new GoldenCustomer("0004", 2100);
+        PlatinumCustomer c5 = new PlatinumCustomer("0005", 3500);
 
         c1.print();
         c2.print();
         c3.print();
         c4.print();
+        c5.print();
     }
 }
