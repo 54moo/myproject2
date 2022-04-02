@@ -28,6 +28,6 @@ public class Ticket {
 
     public void print() {
         System.out.println("from " + start.name + " to "  + destination.name +
-                "\t" + "(" + types + ")" + "\t" + number +"\t" + price*number);
+                "\t" + "(" + types + ")" + "\t" + "*" + number +"\t" + "price:" + price*number);
     }
 }

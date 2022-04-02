@@ -1,11 +1,9 @@
 package com.pm.ticket;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Station {
-
     /*public static void main(String[] args) {
         List<Station> stations = new ArrayList<>();
         stations.add(new Station(100,"Taipei"));

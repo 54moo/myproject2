@@ -9,6 +9,7 @@ public class StudentTicket extends Ticket {
         return (int)(price*0.8f);
     }
     public void print() {
-        System.out.println("from " + start.name + " to " + destination.name + "\t" +  "(" + types + ")" + "\t" + number + "\t" + getPrice()*number);
+        System.out.println("from " + start.name + " to " + destination.name + "\t" +
+                "(" + types + ")" + "\t" + "*" + number + "\t" + "price:" + getPrice()*number);
     }
 }

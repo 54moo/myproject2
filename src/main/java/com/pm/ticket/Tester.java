@@ -9,6 +9,7 @@ public class Tester {
         //Constructor, constant value
         List<Ticket> ticket = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome!");
         boolean exit = false;
         while (exit != true) {
             System.out.println("Your start station? 1): Taipei, 2): Taichung, 3): Kaohsiung)");
@@ -70,17 +71,18 @@ public class Tester {
                     break;
             }
 
-            System.out.println("Continue?" + "\n" + "1.Yes" + "\t" + "2.No");
+            System.out.println("Continue?" + "\t" + "1). Yes" + "\t" + "2). No");
             int options = Integer.parseInt(scanner.next());
             if (options == 1) {
                 exit = false;
-            } else if (options == 2) {
+            } else  if (options == 2) {
                 exit = true;
             }
         }
-        for (Ticket t : ticket) {
-            t.print();
-        }
-        System.out.println("Thank you for buying.");
+             for (Ticket t : ticket) {
+                t.print();
+             }
+             System.out.println();
+             System.out.println("Thank you for your visit, it's glad to serve you.");
         }
     }
