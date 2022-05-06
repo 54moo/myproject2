@@ -26,8 +26,8 @@ public class Ticket {
             price = 1500;
         }
 
-    public void print() {
-        System.out.println("from " + start.name + " to "  + destination.name +
-                "\t" + "(" + types + ")" + "\t" + "*" + number +"\t" + "price:" + price*number);
+        public void print() {
+            System.out.println("from " + start.name + " to " + destination.name +
+                    "\t" + "(" + types + ")" + "\t" + "*" + number + "\t" + "price:" + price * number);
+        }
     }
-}
