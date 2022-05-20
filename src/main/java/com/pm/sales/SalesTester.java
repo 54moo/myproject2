@@ -34,5 +34,7 @@ public class SalesTester {
         for (Customer c : customers){
             c.print();
         }
+
+
     }
 }
