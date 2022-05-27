@@ -4,9 +4,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
+import java.util.Scanner;
 
 public class GuessFrame extends JFrame {
     //Fields
+    JButton button = new JButton("GO");
+    JLabel label = new JLabel("Guess number 1-10");
+    JTextField number = new JTextField(10);
 
     //Constructors
     public GuessFrame(){
@@ -14,25 +19,40 @@ public class GuessFrame extends JFrame {
         setSize(600,400);
         setLocation(300,200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        JButton button = new JButton("Hi");
-        JLabel label = new JLabel("zzz");
+        setVisible(true);
+
+        Random random = new Random();
+        int secret = random.nextInt(10)+1;
+
+
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //System.out.println("Hello");
-                label.setText("Hello!!");
+                //label.setText("Hello!!");
+                int num = Integer.parseInt(number.getText());
+                System.out.println(num);
+
+                if (num>secret){
+                    label.setText("Smaller");
+                }else if (num<secret){
+                    label.setText("Bigger");
+                }else{
+                    label.setText("Bingo!!");
+                }
+
+                System.out.println(secret);
             }
         });
 
-        label.setText("aaa");
-
         setLayout(new FlowLayout());
-        add(label);
+        add(number);
         add(button);
-        setVisible(true);
-    }
-    //Methods
+        add(label);
 
+    }
+
+    //Methods
     public static void main(String[] args) {
         GuessFrame guessFrame = new GuessFrame();
         /* guessFrame.setSize(600,400);
