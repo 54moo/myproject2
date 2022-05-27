@@ -40,8 +40,6 @@ public class GuessFrame extends JFrame {
                 }else{
                     label.setText("Bingo!!" + "The secret number is: " + secret);
                 }
-
-                System.out.println(secret);
             }
         });
 
