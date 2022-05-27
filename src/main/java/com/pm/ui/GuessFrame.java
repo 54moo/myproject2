@@ -22,7 +22,6 @@ public class GuessFrame extends JFrame {
         setSize(600,400);
         setLocation(300,200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        setVisible(true);
 
         System.out.println("secret:" + secret);
 
@@ -50,7 +49,7 @@ public class GuessFrame extends JFrame {
         add(number);
         add(button);
         add(label);
-
+        setVisible(true);
     }
 
     //Methods
