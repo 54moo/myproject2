@@ -13,6 +13,9 @@ public class GuessFrame extends JFrame {
     JLabel label = new JLabel("Guess number 1-10");
     JTextField number = new JTextField(10);
 
+    Random random = new Random();
+    int secret = random.nextInt(10)+1;
+
     //Constructors
     public GuessFrame(){
         super();
@@ -21,9 +24,7 @@ public class GuessFrame extends JFrame {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setVisible(true);
 
-        Random random = new Random();
-        int secret = random.nextInt(10)+1;
-
+        System.out.println("secret:" + secret);
 
         button.addActionListener(new ActionListener() {
             @Override
@@ -38,7 +39,7 @@ public class GuessFrame extends JFrame {
                 }else if (num<secret){
                     label.setText("Bigger");
                 }else{
-                    label.setText("Bingo!!");
+                    label.setText("Bingo!!" + "The secret number is" + secret);
                 }
 
                 System.out.println(secret);
