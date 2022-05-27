@@ -1,5 +1,5 @@
 package com.pm.sales;
-//實作 MyInterface 介面
+//¹ê§@ MyInterface ¤¶­±
 
 public class MyClass implements MyInterface{
     public void print(){
