@@ -10,8 +10,8 @@ public class Runner {
         String exitTime = "11:00";
         SimpleDateFormat sdf =
                 new SimpleDateFormat("HH:mm");
-        // Exception 例外 vs Error 錯誤
-        // Exception handing 例外處理
+        // Exception ?? vs Error ??
+        // Exception handing ????
         Date d = null;
         try{
             d = sdf.parse(enterTime);
@@ -32,9 +32,9 @@ public class Runner {
             // NT$30/h
             int hours = (minutes+30)/60;
             System.out.println(30*hours + "$");
-            //不滿15分鐘不算錢
-            //15-29分鐘，為半小時，收15$
-            //30-44分鐘，為半小時，收15$
+            //??15?????
+            //15-29?????????15$
+            //30-44?????????15$
         }catch (Exception e){
             System.out.println("Exit wrong format");
         }
