@@ -1,4 +1,4 @@
-package com.pm.ui;
+﻿package com.pm.ui;
 
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicSliderUI;
