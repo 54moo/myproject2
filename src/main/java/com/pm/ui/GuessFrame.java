@@ -23,7 +23,7 @@ public class GuessFrame extends JFrame {
         setLocation(300,200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
-        System.out.println("secret:" + secret);
+        System.out.println("secret number: " + secret);
 
         button.addActionListener(new ActionListener() {
             @Override
@@ -38,7 +38,7 @@ public class GuessFrame extends JFrame {
                 }else if (num<secret){
                     label.setText("Bigger");
                 }else{
-                    label.setText("Bingo!!" + "The secret number is" + secret);
+                    label.setText("Bingo!!" + "The secret number is: " + secret);
                 }
 
                 System.out.println(secret);
