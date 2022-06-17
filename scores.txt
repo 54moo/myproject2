@@ -1,2 +1,5 @@
 Jack,25,80
 Hank,67,90
+Eric,60,90
+Mike,87,54
+Jane,34,98
